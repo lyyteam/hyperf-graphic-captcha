@@ -1,0 +1,45 @@
+{
+    "name": "lyyteam/hyperf-graphic-captcha",
+    "description": "Graphic captcha component for Hyperf 3.1+",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "hyperf",
+        "captcha",
+        "graphic-captcha",
+        "validation"
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-gd": "*",
+        "ext-mbstring": "*",
+        "hyperf/cache": "^3.1",
+        "hyperf/context": "^3.1",
+        "hyperf/contract": "^3.1",
+        "hyperf/event": "^3.1",
+        "hyperf/framework": "^3.1",
+        "hyperf/http-message": "^3.1",
+        "hyperf/http-server": "^3.1"
+    },
+    "suggest": {
+        "hyperf/validation": "Optional. Enables the captcha validation rule when installed."
+    },
+    "autoload": {
+        "psr-4": {
+            "Lyyteam\\HyperfGraphicCaptcha\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Lyyteam\\HyperfGraphicCaptcha\\ConfigProvider"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
